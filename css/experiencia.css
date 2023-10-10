@@ -1,0 +1,99 @@
+.experiencia-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 32px 32px 128px 32px;
+}
+
+.experiencia-conteudo h1 {
+  font-family: nunito;
+  font-size: 36px;
+  font-weight: bold;
+  max-width: 20ch;
+  line-height: 1.2;
+}
+
+.experiencia-conteudo p {
+  color: #111215;
+  max-width: 60ch;
+  font-family: 'roboto', sans serif;
+  line-height: 1.5;
+  margin-top: 128px;
+  margin-bottom: 32px;
+  font-size: 16px;
+}
+
+#experiencia h2 {
+  font-family: 'nunito', sans-serif;
+  font-weight: bold;
+  font-size: 120px;
+  color: #EDEDF1;
+  text-transform: uppercase;
+  word-break: break-all;
+  max-width: 4.5ch;
+  line-height: 1;
+}
+
+.empresa {
+  background-color: #F8F8FF;
+  padding: 16px;
+  max-width: 600px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.empresa::before {
+content: '';
+display: block;
+width: 2px;
+height: 10px;
+left: -2px;
+top: 20px;
+background: linear-gradient(#071AC2, #3E51F5);
+position: absolute;
+}
+
+.empresa:first-child{
+  margin-bottom: 32px;
+}
+
+.empresa h3 {
+  font-family: 'nunito', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.empresa p {
+  color: #2F2F33;
+  font-family: 'roboto', sans serif;
+  line-height: 1.5;
+  max-width: 90ch;
+}
+
+@media(max-width: 700px){
+  .experiencia-container{
+    display: grid;;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .foto-perfil{
+    margin-top: 64px;
+  }
+  .experiencia-conteudo h1 {  
+    margin-top: 32px;
+    font-size: 32px;
+    max-width: 35ch;
+    text-align: center;
+  }
+  .experiencia-conteudo  {
+    display: grid;
+    justify-items: center;
+  }
+  .experiencia-conteudo p {
+   margin-top: 16px;
+}
+#experiencia h2 {
+  display: none;
+}
+}
